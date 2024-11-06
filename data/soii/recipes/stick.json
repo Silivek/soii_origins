@@ -1,0 +1,18 @@
+{
+    "id": "soii:stick",
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+    "pattern": [
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "tag": "soii:mushroom"
+        }
+    },
+    "result": {
+        "item": "minecraft:stick",
+        "count": 2
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "origins:attribute",
+  "modifiers": [
+    {
+      "name": "MHP Increase",
+      "attribute": "minecraft:generic.max_health",
+      "value": 10,
+      "operation": "addition"
+    },
+    {
+      "name": "AT Increase",
+      "attribute": "minecraft:generic.armor_toughness",
+      "value": 2,
+      "operation": "addition"
+    }
+  ],  "name": "Hardy Body",
+  "description": "Your rocky skin and muscle give you natural armor toughness and extra health."
+}

@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"soii:feign_death",
+		"soii:possum_tail",
+		"soii:possum_body",
+		"soii:possum_body_width",
+		"origins:fragile",
+		"soii:possum_armor",
+		"origins:no_shield"
+	],
+	"icon": "minecraft:oak_wood",
+	"order": 7,
+	"impact": 2,
+	"name": "Possum",
+	"description": "She is the crisis.",
+	"unchoosable": false
+}

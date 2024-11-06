@@ -1,0 +1,50 @@
+{
+  "type": "origins:multiple",
+  "strong_fists": {
+    "type": "origins:modify_harvest",
+    "allow": true,
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "origins:natural_stone"
+    }
+  },
+  "stone_haste": {
+    "type": "origins:modify_break_speed",
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "origins:natural_stone"
+    },
+    "condition": {
+      "type": "origins:using_effective_tool",
+      "inverted": true
+    },
+    "modifier": {
+      "name": "Strong Arms stone break speed bonus",
+      "value": 0.06,
+      "operation": "addition"
+    }
+  },
+  "haste": {
+    "type": "origins:action_over_time",
+    "entity_actions": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:haste",
+        "duration": 100,
+        "power": 0
+      }
+    },
+    "condition": {
+        "type": "origins:exposed_to_sky",
+        "inverted": true
+    },
+    "interval": 80
+  },
+  "mineshaft": {
+    "type": "origins:modify_player_spawn",
+  	"dimension": "minecraft:overworld",
+  	"structure": "mineshaft"
+  },
+  "name": "Cave Affinity",
+  "description": "You are a creature of the depths and have a base mining level of wood."
+}

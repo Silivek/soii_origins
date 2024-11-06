@@ -1,0 +1,111 @@
+{
+	"type": "origins:action_on_callback",
+	"entity_action_chosen": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "scale set extraorigins:modify_size 0.25 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale set pehkui:hitbox_width 2 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team add possumOrigin \"Possum Origin\""
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team join possumOrigin @s"
+			}
+		]
+	},
+	"entity_action_gained": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "scale set extraorigins:modify_size 0.25 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale set pehkui:hitbox_width 2 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team join possumOrigin @s"
+			}
+		]
+	},
+	"entity_action_lost": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "scale set extraorigins:modify_size 1 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale set pehkui:hitbox_width 1 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team leave @s"
+			}
+		]
+	},
+	"entity_action_added": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "scale set extraorigins:modify_size 0.25 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale set pehkui:hitbox_width 2 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team join possumOrigin @s"
+			}
+		]
+	},
+	"entity_action_removed": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "scale set extraorigins:modify_size 1 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale set pehkui:hitbox_width 1 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team leave @s"
+			}
+		]
+	},
+	"entity_action_respawned": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "scale set extraorigins:modify_size 0.25 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale set pehkui:hitbox_width 2 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "team join possumOrigin @s"
+			}
+		]
+	},
+	"name": "Possum Body",
+	"description": "You are small, like a possum!"
+}

@@ -1,0 +1,50 @@
+{
+  "type": "origins:multiple",
+  "carnivore": {
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:ingredient",
+              "ingredient": {
+                "tag": "origins:meat"
+              }
+            },
+            {
+              "type": "origins:meat"
+            }
+          ],
+          "inverted": true
+        },
+        {
+          "type": "origins:food"
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "tag": "origins:ignore_diet"
+          },
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "pursuit": {
+    "type": "origins:self_action_when_hit",
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:speed",
+        "duration": 200,
+        "power": 1
+      }
+    },
+    "cooldown": 1200
+  },
+  "name": "Predator",
+  "description": "You are a carnivore and are good at chasing prey."
+}

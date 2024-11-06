@@ -1,0 +1,51 @@
+{
+	"type": "origins:multiple",
+	"small": {
+		"type": "origins:fire_projectile",
+		"cooldown": 20,
+		"entity_type": "minecraft:small_fireball",
+		"sound": "minecraft:entity.blaze.shoot",
+		"speed": 0.25,
+		"divergence": 50,
+		"key": {
+			"key": "key.origins.primary_active",
+			"continuous": true
+		}
+	},
+	"big": {
+		"type": "origins:fire_projectile",
+		"hud_render": {
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+			"bar_index": 7
+		},
+		"cooldown": 200,
+		"entity_type": "minecraft:fireball",
+		"sound": "minecraft:entity.firework_rocket.launch",
+		"speed": 0.25,
+		"divergence": 1,
+		"key": {
+			"key": "key.use",
+			"continuous": false
+		},
+		"condition": {
+			"type": "origins:inventory",
+			"slot": "weapon.mainhand",
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:fire_charge"
+				}
+			}
+		},
+		"shooter_action": {
+			"type": "origins:modify_inventory",
+			"slot": "weapon.mainhand",
+			"item_action": {
+				"type": "origins:consume",
+				"amount": 1
+			}
+		}
+	},
+	"name": "Fireballs",
+	"description": "You can shoot small fireballs with [Primary] and large fireballs by right clicking with a Fire Charge in hand."
+}

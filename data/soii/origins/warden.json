@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"soii:hardy_body",
+		"soii:cave_affinity",
+		"soii:predator",
+		"soii:bulky",
+		"soii:echolocation"
+	],
+	"icon": "minecraft:end_portal_frame",
+	"order": 4,
+	"impact": 3,
+	"name": "Warden",
+	"description": "Born in the depths, these predatory creatures see through sounds.",
+	"unchoosable": false
+}

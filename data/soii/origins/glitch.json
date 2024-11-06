@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"soii:lagswitch",
+		"soii:immobile",
+		"soii:rubber_band",
+		"soii:combat_log",
+		"soii:warped_signal",
+		"soii:unstable",
+		"soii:shake"
+
+	],
+	"icon": "minecraft:petrified_oak_slab",
+	"order": 4,
+	"impact": 3,
+	"name": "The Glitch",
+	"description": "A very unstable creature that shouldn't exist.",
+	"unchoosable": false
+}

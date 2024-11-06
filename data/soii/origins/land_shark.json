@@ -1,0 +1,20 @@
+{
+	"powers": [
+		"soii:phase_toggle",
+		"soii:earth_sight",
+		"soii:ground_swimming",
+		"soii:speedy_swimming",
+		"soii:sturdy_physique",
+		"soii:erosion",
+		"soii:phasing",
+		"soii:phasing_overlay",
+		"soii:fins",
+		"origins:carnivore"
+	],
+	"icon": "minecraft:stone",
+	"order": 4,
+	"impact": 3,
+	"name": "Land Shark",
+	"description": "Like its brethren the Shark and Lava Shark, it can swim freely through its habitat, the ground.",
+	"unchoosable": false
+}

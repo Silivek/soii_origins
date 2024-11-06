@@ -1,0 +1,30 @@
+{
+  "type": "origins:multiple",
+  "fall": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:slow_falling",
+        "amplifier": 0,
+        "duration": 25,
+        "show_icon": false,
+        "show_particles": false
+      }
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_toggle"
+    }
+  },
+  "toggle": {
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+  },
+  "name": "Slow Falling",
+  "description": "You can toggle a slow falling ability by pressing the [2nd] key."
+}

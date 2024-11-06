@@ -1,0 +1,20 @@
+{
+	"type": "origins:prevent_item_use",
+	"item_condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:ingredient",
+				"inverted": true,
+				"ingredient": {
+					"tag": "soii:infection_food"
+				}
+			},
+			{
+				"type": "origins:food"
+			}
+		]
+	},
+	"name": "Mushroomivore",
+	"description": "You can only eat things found on a mushroom island."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "origins:conditioned_attribute",
+  "condition": {
+    "type": "origins:in_block",
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "soii:phasable"
+    },
+    "inverted": true
+  },
+  "modifier": {
+    "attribute": "generic.movement_speed",
+    "operation": "multiply_base",
+    "value": -0.5
+  },
+  "name": "Fins",
+  "description": "Due to having fins, you move slower on land."
+}

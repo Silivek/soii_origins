@@ -1,0 +1,55 @@
+{
+  "type": "origins:multiple",
+  "prevent": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "log": {
+    "type": "origins:prevent_death",
+    "damage_condition": {
+      "type": "origins:attacker",
+      "entity_condition": {
+        "type": "origins:entity_type",
+        "entity_type": "minecraft:player"
+      }
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "*:*_prevent",
+          "change": 1
+        },
+        {
+          "type": "origins:delay",
+          "ticks": 1,
+          "action": {
+            "type": "origins:execute_command",
+            "command": "kick @s"
+          }
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:*_prevent",
+      "comparison": "==",
+      "compare_to": 0
+    }
+  },
+  "reset_log": {
+    "type": "origins:action_on_callback",
+    "entity_action_respawned": {
+      "type": "origins:change_resource",
+      "resource": "*:*_prevent",
+      "change": -1
+    }
+  },
+  "name": "Combat Log",
+  "description": "When dealt lethal damage by a player, you log out immediately."
+}

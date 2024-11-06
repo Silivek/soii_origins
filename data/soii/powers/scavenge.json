@@ -1,0 +1,17 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+	},
+	"condition": {
+		"type": "origins:in_block",
+		"block_condition": {
+			"type": "origins:block",
+			"block": "minecraft:composter"
+		}
+	},
+	"key": {
+		"key": "key.origins.primary_active"
+	},
+	"name": "Scavenge",
+	"decsription": "You can forage for resources while inside of a composter."
+}

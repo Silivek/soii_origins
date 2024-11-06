@@ -1,0 +1,267 @@
+{
+	"type": "origins:multiple",
+	"prevent_view": {
+		"type": "origins:prevent_entity_render",
+		"entity_condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:block_in_radius",
+					"inverted": true,
+					"radius": 3,
+					"shape": "sphere",
+					"block_condition": {
+						"type": "origins:in_tag",
+						"tag": "soii:infected"
+					}
+				},
+				{
+					"type": "origins:biome",
+					"inverted": true,
+					"biomes": [
+						"minecraft:mushroom_fields",
+						"minecraft:crimson_forest",
+						"minecraft:warped_forest"
+					]
+				}
+			]
+		}
+	},
+	"intruder": {
+		"type": "origins:entity_glow",
+		"entity_condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:block_in_radius",
+					"radius": 3,
+					"shape": "sphere",
+					"block_condition": {
+						"type": "origins:in_tag",
+						"tag": "soii:infected"
+					}
+				},
+				{
+					"type": "origins:biome",
+					"biomes": [
+						"minecraft:mushroom_fields",
+						"minecraft:crimson_forest",
+						"minecraft:warped_forest"
+					]
+				}
+			]
+		}
+	},
+	"home_night_vision": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+		  "type": "origins:apply_effect",
+		  "effect":{
+			  "effect": "minecraft:night_vision",
+			  "amplifier": 0,
+			  "duration": 300,
+			  "is_ambient": true,
+			  "show_particles": false,
+			  "show_icon": false
+			}
+		},
+		"condition": {
+		  "type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:block_in_radius",
+					"radius": 3,
+					"shape": "sphere",
+					"block_condition": {
+						"type": "origins:in_tag",
+						"tag": "soii:infected"
+					}
+				},
+				{
+					"type": "origins:biome",
+					"biomes": [
+						"minecraft:mushroom_fields",
+						"minecraft:crimson_forest",
+						"minecraft:warped_forest"
+					]
+				}
+			]
+		}
+	},
+	"home_clear_blindness": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:clear_effect",
+			"effect": "minecraft:blindness"
+		},
+		"condition": {
+		  "type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:block_in_radius",
+					"radius": 3,
+					"shape": "sphere",
+					"block_condition": {
+						"type": "origins:in_tag",
+						"tag": "soii:infected"
+					}
+				},
+				{
+					"type": "origins:biome",
+					"biomes": [
+						"minecraft:mushroom_fields",
+						"minecraft:crimson_forest",
+						"minecraft:warped_forest"
+					]
+				}
+			]
+		}
+	},
+	"home_clear_slowness": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:clear_effect",
+			"effect": "minecraft:slowness"
+		},
+		"condition": {
+		  "type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:block_in_radius",
+					"radius": 3,
+					"shape": "sphere",
+					"block_condition": {
+						"type": "origins:in_tag",
+						"tag": "soii:infected"
+					}
+				},
+				{
+					"type": "origins:biome",
+					"biomes": [
+						"minecraft:mushroom_fields",
+						"minecraft:crimson_forest",
+						"minecraft:warped_forest"
+					]
+				}
+			]
+		}
+	},
+	"home_speed_boost": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_base",
+			"value": 0.25,
+			"name": "SPD Increase on Mycelium"
+		},
+		"tick_rate": 1,
+		"condition": {
+		  "type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:block_in_radius",
+					"radius": 3,
+					"shape": "sphere",
+					"block_condition": {
+						"type": "origins:in_tag",
+						"tag": "soii:infected"
+					}
+				},
+				{
+					"type": "origins:biome",
+					"biomes": [
+						"minecraft:mushroom_fields",
+						"minecraft:crimson_forest",
+						"minecraft:warped_forest"
+					]
+				}
+			]
+		}
+	},
+	"away_debuffs": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+		  "type": "origins:apply_effect",
+		  "effects":[
+			{
+			  "effect": "minecraft:slowness",
+			  "amplifier": 1,
+			  "duration": 40,
+			  "is_ambient": true,
+			  "show_particles": false,
+			  "show_icon": false
+			},
+			{
+			  "effect": "minecraft:blindness",
+			  "amplifier": 0,
+			  "duration": 40,
+			  "is_ambient": true,
+			  "show_particles": false,
+			  "show_icon": false
+			}
+		  ]
+		},
+		"condition": {
+		  "type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:block_in_radius",
+					"inverted": true,
+					"radius": 3,
+					"shape": "sphere",
+					"block_condition": {
+						"type": "origins:in_tag",
+						"tag": "soii:infected"
+					}
+				},
+				{
+					"type": "origins:biome",
+					"inverted": true,
+					"biomes": [
+						"minecraft:mushroom_fields",
+						"minecraft:crimson_forest",
+						"minecraft:warped_forest"
+					]
+				}
+			]
+		}
+	},
+	"away_clear_night_vision": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:clear_effect",
+			"effect": "minecraft:night_vision"
+		},
+		"condition": {
+		  "type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:block_in_radius",
+					"inverted": true,
+					"radius": 3,
+					"shape": "sphere",
+					"block_condition": {
+						"type": "origins:in_tag",
+						"tag": "soii:infected"
+					}
+				},
+				{
+					"type": "origins:biome",
+					"inverted": true,
+					"biomes": [
+						"minecraft:mushroom_fields",
+						"minecraft:crimson_forest",
+						"minecraft:warped_forest"
+					]
+				}
+			]
+		}
+	},
+	"name": "Home Turf",
+	"description": "You have an advantage being on your home turf but off of it you have severe drawbacks."
+}

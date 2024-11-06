@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"soii:unyielding_hands"
+	],
+	"icon": "minecraft:composter",
+	"order": 1,
+	"impact": 2,
+	"name": "Raccoon",
+	"description": "You used to be a bandit until you took a trash to the knee."
+}

@@ -1,0 +1,34 @@
+{
+	"type": "origins:multiple",
+	"blindness": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:apply_effect",
+			"effect": {
+  			"effect": "minecraft:blindness",
+  			"duration": 120,
+  			"power": 0,
+        "show_particles": false,
+        "show_icon": false
+			}
+		},
+		"interval": 100,
+		"condition": {
+  		"type": "origins:exposed_to_sky"
+		}
+	},
+	"echo": {
+		"type": "origins:prevent_entity_render",
+		"entity_condition": {
+			"type": "origins:sneaking"
+		}
+	},
+	"loud": {
+		"type": "origins:entity_glow",
+		"entity_condition": {
+			"type": "origins:sprinting"
+		}
+	},
+	"name": "Echolocation",
+	"description": "You are blind and rely on sounds to navigate."
+}

@@ -1,0 +1,28 @@
+{
+	"type": "origins:multiple",
+	"swimming": {
+		"type": "origins:swimming",
+		"condition": {
+			"type": "origins:submerged_in",
+			"fluid": "minecraft:lava"
+		}
+	},
+	"slow_swimming": {
+		"type": "origins:modify_swim_speed",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": "0.15"
+		},
+		"condition": {
+			"type": "origins:submerged_in",
+			"fluid": "minecraft:lava"
+		}
+	},
+	"seeing": {
+		"type": "origins:lava_vision",
+		"s": 0,
+		"v": 15
+	},
+	"name": "Lava Swimmer",
+	"description": "Due to your nether nature, you can swim and see in lava."
+}

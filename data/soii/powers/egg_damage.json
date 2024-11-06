@@ -1,0 +1,13 @@
+{
+	"type": "origins:modify_projectile_damage",
+  "damage_condition": {
+      "type": "origins:projectile",
+      "projectile": "minecraft:egg"
+  },
+  "modifier": {
+      "operation": "addition",
+      "value": 4.0
+  },
+	"name": "Eggslinger",
+	"description": "Eggs deal extra damage when you hit something."
+}

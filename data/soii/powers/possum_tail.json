@@ -1,0 +1,61 @@
+{
+	"type": "origins:climbing",
+	"allow_holding": true,
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:block_in_radius",
+				"block_condition": {
+					"type": "origins:in_tag",
+					"tag": "soii:possum_climbable"
+				},
+				"radius": 1
+			},
+			{
+				"type": "origins:or",
+				"conditions": [
+					{
+						"type": "origins:block_collision",
+						"offset_x": 0.9,
+						"offset_y": 0,
+						"offset_z": 0.9
+					},
+					{
+						"type": "origins:block_collision",
+						"offset_x": -0.9,
+						"offset_y": 0,
+						"offset_z": -0.9
+					},
+					{
+						"type": "origins:block_collision",
+						"offset_x": 0.9,
+						"offset_y": 0,
+						"offset_z": -0.9
+					},
+					{
+						"type": "origins:block_collision",
+						"offset_x": -0.9,
+						"offset_y": 0,
+						"offset_z": 0.9
+					},
+
+					{
+						"type": "origins:block_collision",
+						"offset_x": 0.9,
+						"offset_y": 0.9,
+						"offset_z": 0.9
+					},
+					{
+						"type": "origins:block_collision",
+						"offset_x": -0.9,
+						"offset_y": 0.9,
+						"offset_z": -0.9
+					}
+				]
+			}
+		]
+	},
+	"name": "Possum Tail",
+	"description": "You climb up, down, and across tree limbs and leaves."
+}

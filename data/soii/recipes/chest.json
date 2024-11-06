@@ -1,0 +1,19 @@
+{
+    "id": "soii:chest",
+    "type": "minecraft:crafting_shaped",
+	"category": "building",
+    "pattern": [
+        "###",
+        "# #",
+		"###"
+    ],
+    "key": {
+        "#": {
+            "tag": "soii:mushroom"
+        }
+    },
+    "result": {
+        "item": "minecraft:chest",
+        "count": 1
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "type": "origins:prevent_block_use",
+    "block_condition": {
+      "type": "origins:block",
+      "block": "minecraft:ender_chest"
+    },
+    "name": "Warped Signal",
+    "description": "You are unable to use Ender Chests due to your biological frequency being scrambled."
+}

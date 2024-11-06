@@ -1,0 +1,180 @@
+{
+	"type": "origins:multiple",
+	"block": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "setblock ~ ~-1 ~ mycelium"
+		},
+		"hud_render": {
+			"should_render": false
+		},
+		"interval": 1,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:offset",
+						"y": -1,
+						"condition": {
+							"type": "origins:in_tag",
+							"tag": "soii:infectable"
+						}
+					}
+				},
+				{
+					"type": "origins:sneaking"
+				}
+			]
+		}
+	},
+	"craft_mycelium": {
+		"type": "origins:recipe",
+		"recipe": {
+			"id": "soii:infect/mycelium_crafting",
+			"type": "minecraft:crafting_shapeless",
+			"ingredients": [
+				{
+					"tag": "soii:infectable"
+				},
+				{
+					"item": "minecraft:mycelium"
+				}
+			],
+			"result": {
+				"item": "minecraft:mycelium",
+				"count": 2
+			}
+		}
+	},
+	"craft_crimson_nylium": {
+		"type": "origins:recipe",
+		"recipe": {
+			"id": "soii:infect/crimson_nylium_crafting",
+			"type": "minecraft:crafting_shapeless",
+			"ingredients": [
+				{
+					"item": "minecraft:netherrack"
+				},
+				{
+					"item": "minecraft:crimson_nylium"
+				}
+			],
+			"result": {
+				"item": "minecraft:crimson_nylium",
+				"count": 2
+			}
+		}
+	},
+	"craft_warped_nylium": {
+		"type": "origins:recipe",
+		"recipe": {
+			"id": "soii:infect/warped_nylium_crafting",
+			"type": "minecraft:crafting_shapeless",
+			"ingredients": [
+				{
+					"item": "minecraft:netherrack"
+				},
+				{
+					"item": "minecraft:warped_nylium"
+				}
+			],
+			"result": {
+				"item": "minecraft:warped_nylium",
+				"count": 2
+			}
+		}
+	},
+	"remove_mycelium": {
+		"type": "origins:modify_harvest",
+		"allow": false,
+		"block_condition": {
+				"type": "origins:block",
+				"block": "minecraft:mycelium"
+		}
+	},
+	"silk_mycelium": {
+		"type": "origins:action_on_block_break",
+		"only_when_harvested": false,
+		"block_action": {
+			"type": "origins:execute_command",
+			"command": "summon minecraft:item ~ ~ ~ {Item:{id:mycelium,Count:1}}"
+		},
+		"block_condition": {
+			"type": "origins:block",
+			"block": "minecraft:mycelium"
+		}
+	},
+	"silk_red_mushroom_block": {
+		"type": "origins:action_on_block_break",
+		"only_when_harvested": false,
+		"block_action": {
+			"type": "origins:execute_command",
+			"command": "summon minecraft:item ~ ~ ~ {Item:{id:red_mushroom_block,Count:1}}"
+		},
+		"block_condition": {
+			"type": "origins:block",
+			"block": "minecraft:red_mushroom_block"
+		}
+	},
+	"silk_brown_mushroom_block": {
+		"type": "origins:action_on_block_break",
+		"only_when_harvested": false,
+		"block_action": {
+			"type": "origins:execute_command",
+			"command": "summon minecraft:item ~ ~ ~ {Item:{id:brown_mushroom_block,Count:1}}"
+		},
+		"block_condition": {
+			"type": "origins:block",
+			"block": "minecraft:brown_mushroom_block"
+		}
+	},
+	"silk_mushroom_stem": {
+		"type": "origins:action_on_block_break",
+		"only_when_harvested": false,
+		"block_action": {
+			"type": "origins:execute_command",
+			"command": "summon minecraft:item ~ ~ ~ {Item:{id:mushroom_stem,Count:1}}"
+		},
+		"block_condition": {
+			"type": "origins:block",
+			"block": "minecraft:mushroom_stem"
+		}
+	},
+	"remove_netherrack": {
+		"type": "origins:modify_harvest",
+		"allow": false,
+		"block_condition": {
+			"type": "origins:in_tag",
+			"tag": "minecraft:nylium"
+		}
+	},
+	"silk_crimson_nylium": {
+		"type": "origins:action_on_block_break",
+		"only_when_harvested": true,
+		"block_action": {
+			"type": "origins:execute_command",
+			"command": "summon minecraft:item ~ ~ ~ {Item:{id:crimson_nylium,Count:1}}"
+		},
+		"block_condition": {
+			"type": "origins:block",
+			"block": "minecraft:crimson_nylium"
+		}
+	},
+	"silk_warped_nylium": {
+		"type": "origins:action_on_block_break",
+		"only_when_harvested": true,
+		"block_action": {
+			"type": "origins:execute_command",
+			"command": "summon minecraft:item ~ ~ ~ {Item:{id:warped_nylium,Count:1}}"
+		},
+		"block_condition": {
+			"type": "origins:block",
+			"block": "minecraft:warped_nylium"
+		}
+	},
+	"name": "Infect",
+	"description": "You can use [Sneak] to infect the block below you and you can craft infected blocks."
+}

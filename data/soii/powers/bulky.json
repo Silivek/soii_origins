@@ -1,0 +1,135 @@
+{
+  "type": "origins:multiple",
+  "big": {
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:height 2 @s"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:width 2 @s"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:motion 2 @s"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:reach 1.5 @s"
+        }
+      ]
+    },
+    "entity_action_respawned": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:height 2 @s"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:width 2 @s"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:motion 2 @s"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:reach 1.5 @s"
+        }
+      ]
+    },
+    "entity_action_lost": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:height 1 @s"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:width 1 @s"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:motion 1 @s"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:reach 1 @s"
+        }
+      ]
+    },
+    "entity_action_removed": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:height 1 @s"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:width 1 @s"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:motion 1 @s"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:reach 1 @s"
+        }
+      ]
+    }
+  },
+  "too_strong": {
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:bow"
+      }
+    }
+  },
+  "heavy": {
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:name",
+      "name": "fall"
+    },
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 0.5
+    }
+  },
+  "powerful": {
+    "type": "origins:attribute",
+    "modifiers": [
+      {
+        "name": "ATKSP Decrease",
+        "attribute": "minecraft:generic.attack_speed",
+        "value": -0.5,
+        "operation": "multiply_base"
+      },
+      {
+        "name": "ATKDMG Increase",
+        "attribute": "minecraft:generic.attack_damage",
+        "value": 0.5,
+        "operation": "multiply_base"
+      },
+      {
+        "name": "SPD Decrease",
+        "attribute": "minecraft:generic.movement_speed",
+        "value": -0.5,
+        "operation": "multiply_base"
+      }
+    ]
+  },
+  "name": "Bulky",
+  "description": "Being larger causes you to break bows on use and take more fall damage."
+}

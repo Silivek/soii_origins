@@ -1,0 +1,141 @@
+{
+	"type": "origins:multiple",
+	"dead": {
+		"type": "origins:prevent_death",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "*:*_cooldown"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "*:*_resource",
+					"change": 1
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "execute as @e[distance=..32,type=!minecraft:player] run team join possumOrigin @s"
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 300,
+					"action": {
+						"type": "origins:and",
+						"actions": [
+							{
+								"type": "origins:execute_command",
+								"command": "execute as @e[team=possumOrigin,type=!minecraft:player] run team leave @s"
+							},
+							{
+								"type": "origins:change_resource",
+								"resource": "*:*_resource",
+								"change": -1
+							},
+							{
+								"type": "origins:apply_effect",
+								"effect": {
+									"effect": "minecraft:speed",
+									"duration": 100,
+									"amplifier": 1
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:bypasses_armor",
+			"inverted": true
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_cooldown",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"freeze": {
+		"type": "origins:modify_velocity",
+        "modifier": {
+            "value": 0,
+            "operation": "set_total"
+        },
+        "axes": [
+            "x",
+            "y",
+            "z"
+        ],
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": ">",
+            "compare_to": 0
+        }
+	},
+	"no_items": {
+        "type": "origins:prevent_item_use",
+        "condition":{
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+	"no_blocks":{
+        "type": "origins:prevent_block_use",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+	"no_damage": {
+		"type": "origins:modify_damage_dealt",
+		"modifier": {
+			"operation": "multiply_total_additive",
+			"value": -1
+		},
+		"condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": ">",
+            "compare_to": 0
+        }
+	},
+	"no_mining": {
+		"type": "origins:modify_break_speed",
+		"modifier": {
+			"operation": "multiply_total_additive",
+			"value": -1
+		},
+		"condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": ">",
+            "compare_to": 0
+        }
+	},
+	"cooldown": {
+		"type": "origins:cooldown",
+		"cooldown": 3600,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+			"bar_index": 17
+		}
+	},
+	"resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 1,
+		"hud_render": {
+		  "should_render": false
+		}
+	},
+	"name": "Play Dead",
+	"description": "When you receive fatal damage you instead fall into a state of suspended animation for a period of time. This ability does not work on damage that bypasses armor and has a cooldown."
+}

@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"soii:explosive",
+		"soii:chicken_fall",
+		"soii:egg_damage",
+		"soii:chicken_sized",
+		"soii:fragile",
+		"soii:seedivore"
+	],
+	"icon": "minecraft:chicken",
+	"order": 1,
+	"impact": 2,
+	"name": "Chicken",
+	"description": "You are a chicken. What do you want me to tell you?"
+}
