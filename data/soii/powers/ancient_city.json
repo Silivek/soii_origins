@@ -7,7 +7,7 @@
 	},
 	"sculk" : {
 		"type": "origins:prevent_game_event",
-    		"events": [
+			"events": [
 			"minecraft:step",
 			"minecraft:hit_ground"
 		]

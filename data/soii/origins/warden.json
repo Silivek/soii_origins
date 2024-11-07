@@ -1,16 +1,16 @@
 {
-    "powers": [
-        "soii:echolocation",
+	"powers": [
+		"soii:echolocation",
 		"soii:warden_cry",
 		"soii:ancient_city",
 		"soii:sculkborn",
 		"soii:bulky",
 		"soii:sonic_boom",
 		"soii:no_food"
-    ],
-    "icon": "minecraft:sculk_catalyst",
-    "order": 4,
-    "impact": 3,
-    "name": "The Warden",
-    "description": "The Warden lurks in the deepest, darkest depths of the world, protecting its home from cacophonous looters."
+	],
+	"icon": "minecraft:sculk_catalyst",
+	"order": 4,
+	"impact": 3,
+	"name": "The Warden",
+	"description": "The Warden lurks in the deepest, darkest depths of the world, protecting its home from cacophonous looters."
 }

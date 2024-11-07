@@ -8,9 +8,9 @@
 		"soii:unstable",
 		"soii:shake"
 	],
-    "icon": "minecraft:music_disc_11",
-    "order": 4,
-    "impact": 3,
-    "name": "Glitch",
-    "description": "Glitches were never meant to exist, coming into being when §§§§§§§§§§§§§§§§"
+	"icon": "minecraft:music_disc_11",
+	"order": 4,
+	"impact": 3,
+	"name": "Glitch",
+	"description": "Glitches were never meant to exist, coming into being when §§§§§§§§§§§§§§§§"
 }
