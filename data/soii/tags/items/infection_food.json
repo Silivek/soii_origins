@@ -1,9 +1,9 @@
 {
-  "replace": false,
-  "values": [
-    "minecraft:beef",
-    "minecraft:cooked_beef",
-    "minecraft:mushroom_stew",
-	"minecraft:suspicious_stew"
-  ]
+	"replace": false,
+	"values": [
+		"minecraft:beef",
+		"minecraft:cooked_beef",
+		"minecraft:mushroom_stew",
+		"minecraft:suspicious_stew"
+	]
 }

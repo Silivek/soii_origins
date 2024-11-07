@@ -1,14 +1,14 @@
 {
-  "replace": false,
-  "origins": [
-    "soii:land_shark",
-    "soii:warden",
-    "soii:glitch",
-    "soii:chicken",
-    "soii:infection",
-    "soii:raccoon",
-	"soii:possum",
-	"soii:flamespawn"
-  ],
-  "allow_random": false
+	"replace": false,
+	"origins": [
+		"soii:land_shark",
+		"soii:warden",
+		"soii:glitch",
+		"soii:chicken",
+		"soii:infection",
+		"soii:raccoon",
+		"soii:possum",
+		"soii:flamespawn"
+	],
+	"allow_random": false
 }

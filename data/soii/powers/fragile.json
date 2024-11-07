@@ -1,11 +1,11 @@
 {
-  "type": "origins:attribute",
-  "modifier": {
-	"name": "No exhaustion from Origin power",
-	"attribute": "minecraft:generic.max_health",
-	"operation": "addition",
-	"value": -10
-  },
-  "name": "Fragile",
-  "description": "You have 5 less hearts of health than humans."
+	"type": "origins:attribute",
+	"modifier": {
+		"name": "MHP Decrease",
+		"attribute": "minecraft:generic.max_health",
+		"operation": "addition",
+		"value": -10
+	},
+	"name": "Fragile",
+	"description": "You have 5 less hearts of health than humans."
 }

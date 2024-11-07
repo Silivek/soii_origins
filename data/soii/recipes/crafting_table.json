@@ -8,11 +8,11 @@
 	],
 	"key": {
 		"#": {
-		  "tag": "soii:mushroom"
+			"tag": "soii:mushroom"
 		}
 	},
 	"result": {
 		"item": "minecraft:crafting_table",
-        "count": 1
+		"count": 1
 	}
 }

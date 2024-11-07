@@ -12,7 +12,7 @@
 		"soii:lava_swimmer"
 	],
 	"icon": {
-		"item": "minecraft:blaze_rod"
+		"item":"minecraft:blaze_rod"
 	},
 	"order": 1,
 	"impact": 3,

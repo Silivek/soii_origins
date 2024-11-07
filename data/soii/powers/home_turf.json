@@ -56,18 +56,18 @@
 		"type": "origins:action_over_time",
 		"interval": 1,
 		"entity_action": {
-		  "type": "origins:apply_effect",
-		  "effect":{
-			  "effect": "minecraft:night_vision",
-			  "amplifier": 0,
-			  "duration": 300,
-			  "is_ambient": true,
-			  "show_particles": false,
-			  "show_icon": false
+			"type": "origins:apply_effect",
+			"effect":{
+				"effect": "minecraft:night_vision",
+				"amplifier": 0,
+				"duration": 300,
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false
 			}
 		},
 		"condition": {
-		  "type": "origins:or",
+			"type": "origins:or",
 			"conditions": [
 				{
 					"type": "origins:block_in_radius",
@@ -97,7 +97,7 @@
 			"effect": "minecraft:blindness"
 		},
 		"condition": {
-		  "type": "origins:or",
+			"type": "origins:or",
 			"conditions": [
 				{
 					"type": "origins:block_in_radius",
@@ -127,7 +127,7 @@
 			"effect": "minecraft:slowness"
 		},
 		"condition": {
-		  "type": "origins:or",
+			"type": "origins:or",
 			"conditions": [
 				{
 					"type": "origins:block_in_radius",
@@ -159,7 +159,7 @@
 		},
 		"tick_rate": 1,
 		"condition": {
-		  "type": "origins:or",
+			"type": "origins:or",
 			"conditions": [
 				{
 					"type": "origins:block_in_radius",
@@ -185,28 +185,28 @@
 		"type": "origins:action_over_time",
 		"interval": 1,
 		"entity_action": {
-		  "type": "origins:apply_effect",
-		  "effects":[
+			"type": "origins:apply_effect",
+			"effects":[
 			{
-			  "effect": "minecraft:slowness",
-			  "amplifier": 1,
-			  "duration": 40,
-			  "is_ambient": true,
-			  "show_particles": false,
-			  "show_icon": false
+				"effect": "minecraft:slowness",
+				"amplifier": 1,
+				"duration": 40,
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false
 			},
 			{
-			  "effect": "minecraft:blindness",
-			  "amplifier": 0,
-			  "duration": 40,
-			  "is_ambient": true,
-			  "show_particles": false,
-			  "show_icon": false
+				"effect": "minecraft:blindness",
+				"amplifier": 0,
+				"duration": 40,
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false
 			}
-		  ]
+			]
 		},
 		"condition": {
-		  "type": "origins:and",
+			"type": "origins:and",
 			"conditions": [
 				{
 					"type": "origins:block_in_radius",
@@ -238,7 +238,7 @@
 			"effect": "minecraft:night_vision"
 		},
 		"condition": {
-		  "type": "origins:and",
+			"type": "origins:and",
 			"conditions": [
 				{
 					"type": "origins:block_in_radius",

@@ -1,137 +1,137 @@
 {
-  "type": "origins:multiple",
-  "brown_mushroom_block": {
-	  "type": "origins:action_on_callback",
-	  "entity_action_gained": {
-		  "type": "origins:execute_command",
-		  "command": "recipe give @s soii:brown_mushroom_block"
-	  },
-	  "entity_action_lost": {
-		  "type": "origins:execute_command",
-		  "command": "recipe take @s soii:brown_mushroom_block"
-	  }
-  },
-  "chest": {
-	  "type": "origins:action_on_callback",
-	  "entity_action_gained": {
-		  "type": "origins:execute_command",
-		  "command": "recipe give @s soii:chest"
-	  },
-	  "entity_action_lost": {
-		  "type": "origins:execute_command",
-		  "command": "recipe take @s soii:chest"
-	  }
-  },
-  "crafting_table": {
-	  "type": "origins:action_on_callback",
-	  "entity_action_gained": {
-		  "type": "origins:execute_command",
-		  "command": "recipe give @s soii:crafting_table"
-	  },
-	  "entity_action_lost": {
-		  "type": "origins:execute_command",
-		  "command": "recipe take @s soii:crafting_table"
-	  }
-  },
-  "mushroom_stem": {
-	  "type": "origins:action_on_callback",
-	  "entity_action_gained": {
-		  "type": "origins:execute_command",
-		  "command": "recipe give @s soii:mushroom_stem"
-	  },
-	  "entity_action_lost": {
-		  "type": "origins:execute_command",
-		  "command": "recipe take @s soii:mushroom_stem"
-	  }
-  },
-  "mushroom_stem": {
-	  "type": "origins:action_on_callback",
-	  "entity_action_gained": {
-		  "type": "origins:execute_command",
-		  "command": "recipe give @s soii:mushroom_stem"
-	  },
-	  "entity_action_lost": {
-		  "type": "origins:execute_command",
-		  "command": "recipe take @s soii:mushroom_stem"
-	  }
-  },
-  "red_mushroom_block": {
-	  "type": "origins:action_on_callback",
-	  "entity_action_gained": {
-		  "type": "origins:execute_command",
-		  "command": "recipe give @s soii:red_mushroom_block"
-	  },
-	  "entity_action_lost": {
-		  "type": "origins:execute_command",
-		  "command": "recipe take @s soii:red_mushroom_block"
-	  }
-  },
-  "stick": {
-	  "type": "origins:action_on_callback",
-	  "entity_action_gained": {
-		  "type": "origins:execute_command",
-		  "command": "recipe give @s soii:stick"
-	  },
-	  "entity_action_lost": {
-		  "type": "origins:execute_command",
-		  "command": "recipe take @s soii:stick"
-	  }
-  },
-  "wooden_axe": {
-	  "type": "origins:action_on_callback",
-	  "entity_action_gained": {
-		  "type": "origins:execute_command",
-		  "command": "recipe give @s soii:wooden_axe"
-	  },
-	  "entity_action_lost": {
-		  "type": "origins:execute_command",
-		  "command": "recipe take @s soii:wooden_axe"
-	  }
-  },
-  "wooden_hoe": {
-	  "type": "origins:action_on_callback",
-	  "entity_action_gained": {
-		  "type": "origins:execute_command",
-		  "command": "recipe give @s soii:wooden_hoe"
-	  },
-	  "entity_action_lost": {
-		  "type": "origins:execute_command",
-		  "command": "recipe take @s soii:wooden_hoe"
-	  }
-  },
-  "wooden_pickaxe": {
-	  "type": "origins:action_on_callback",
-	  "entity_action_gained": {
-		  "type": "origins:execute_command",
-		  "command": "recipe give @s soii:wooden_pickaxe"
-	  },
-	  "entity_action_lost": {
-		  "type": "origins:execute_command",
-		  "command": "recipe take @s soii:wooden_pickaxe"
-	  }
-  },
-  "wooden_shovel": {
-	  "type": "origins:action_on_callback",
-	  "entity_action_gained": {
-		  "type": "origins:execute_command",
-		  "command": "recipe give @s soii:wooden_shovel"
-	  },
-	  "entity_action_lost": {
-		  "type": "origins:execute_command",
-		  "command": "recipe take @s soii:wooden_shovel"
-	  }
-  },
-  "wooden_sword": {
-	  "type": "origins:action_on_callback",
-	  "entity_action_gained": {
-		  "type": "origins:execute_command",
-		  "command": "recipe give @s soii:wooden_sword"
-	  },
-	  "entity_action_lost": {
-		  "type": "origins:execute_command",
-		  "command": "recipe take @s soii:wooden_sword"
-	  }
-  },
-  "name": "Mushroom Planks",
-  "description": "You can use mushroom blocks as a substitute for planks in a crafting table, chest, sticks, and in tools. You can also craft mushroom blocks from mushrooms."
+	"type": "origins:multiple",
+	"brown_mushroom_block": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "recipe give @s soii:brown_mushroom_block"
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "recipe take @s soii:brown_mushroom_block"
+		}
+	},
+	"chest": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "recipe give @s soii:chest"
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "recipe take @s soii:chest"
+		}
+	},
+	"crafting_table": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "recipe give @s soii:crafting_table"
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "recipe take @s soii:crafting_table"
+		}
+	},
+	"mushroom_stem": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "recipe give @s soii:mushroom_stem"
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "recipe take @s soii:mushroom_stem"
+		}
+	},
+	"mushroom_stem": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "recipe give @s soii:mushroom_stem"
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "recipe take @s soii:mushroom_stem"
+		}
+	},
+	"red_mushroom_block": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "recipe give @s soii:red_mushroom_block"
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "recipe take @s soii:red_mushroom_block"
+		}
+	},
+	"stick": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "recipe give @s soii:stick"
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "recipe take @s soii:stick"
+		}
+	},
+	"wooden_axe": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "recipe give @s soii:wooden_axe"
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "recipe take @s soii:wooden_axe"
+		}
+	},
+	"wooden_hoe": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "recipe give @s soii:wooden_hoe"
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "recipe take @s soii:wooden_hoe"
+		}
+	},
+	"wooden_pickaxe": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "recipe give @s soii:wooden_pickaxe"
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "recipe take @s soii:wooden_pickaxe"
+		}
+	},
+	"wooden_shovel": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "recipe give @s soii:wooden_shovel"
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "recipe take @s soii:wooden_shovel"
+		}
+	},
+	"wooden_sword": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "recipe give @s soii:wooden_sword"
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "recipe take @s soii:wooden_sword"
+		}
+	},
+	"name": "Mushroom Planks",
+	"description": "You can use mushroom blocks as a substitute for planks in a crafting table, chest, sticks, and in tools. You can also craft mushroom blocks from mushrooms."
 }

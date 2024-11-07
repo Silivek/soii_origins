@@ -1,22 +1,22 @@
 {
-    "id": "soii:wooden_shovel",
+	"id": "soii:wooden_shovel",
 	"type": "minecraft:crafting_shaped",
 	"category": "equipment",
-    "pattern": [
-        "#",
-        "/",
+	"pattern": [
+		"#",
+		"/",
 		"/"
-    ],
-    "key": {
-        "#": {
-            "tag": "soii:mushroom"
-        },
+	],
+	"key": {
+		"#": {
+			"tag": "soii:mushroom"
+		},
 		"/": {
 			"item": "minecraft:stick"
 		}
-    },
-    "result": {
-        "item": "minecraft:wooden_shovel",
-        "count": 1
-    }
+	},
+	"result": {
+		"item": "minecraft:wooden_shovel",
+		"count": 1
+	}
 }

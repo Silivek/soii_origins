@@ -1,22 +1,22 @@
 {
-    "id": "soii:wooden_sword",
+	"id": "soii:wooden_sword",
 	"type": "minecraft:crafting_shaped",
 	"category": "equipment",
-    "pattern": [
-        "#",
-        "#",
+	"pattern": [
+		"#",
+		"#",
 		"/"
-    ],
-    "key": {
-        "#": {
-            "tag": "soii:mushroom"
-        },
+	],
+	"key": {
+		"#": {
+			"tag": "soii:mushroom"
+		},
 		"/": {
 			"item": "minecraft:stick"
 		}
-    },
-    "result": {
-        "item": "minecraft:wooden_sword",
-        "count": 1
-    }
+	},
+	"result": {
+		"item": "minecraft:wooden_sword",
+		"count": 1
+	}
 }

@@ -1,20 +1,20 @@
 {
 	"type": "origins:restrict_armor",
-    "chest": {
-        "type": "origins:armor_value",
-        "comparison": ">",
-        "compare_to": 0
-    },
-    "legs": {
-        "type": "origins:armor_value",
-        "comparison": ">",
-        "compare_to": 0
-    },
-    "feet": {
-        "type": "origins:armor_value",
-        "comparison": ">",
-        "compare_to": 0
-    },
-  "name": "Possum Armor",
-  "description": "Your possum physique only allows you to wear helmets."
+	"chest": {
+		"type": "origins:armor_value",
+		"comparison": ">",
+		"compare_to": 0
+	},
+	"legs": {
+		"type": "origins:armor_value",
+		"comparison": ">",
+		"compare_to": 0
+	},
+	"feet": {
+		"type": "origins:armor_value",
+		"comparison": ">",
+		"compare_to": 0
+	},
+	"name": "Possum Armor",
+	"description": "Your possum physique only allows you to wear helmets."
 }

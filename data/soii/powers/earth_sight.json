@@ -1,13 +1,13 @@
 {
-    "type": "origins:night_vision",
-    "strength": 1,
-    "condition": {
-        "type": "origins:in_block",
-        "block_condition": {
-          "type": "origins:in_tag",
-          "tag": "soii:phasable"
-        }
-    },
+	"type": "origins:night_vision",
+	"strength": 1,
+	"condition": {
+		"type": "origins:in_block",
+		"block_condition": {
+			"type": "origins:in_tag",
+			"tag": "soii:phasable"
+		}
+	},
 	"name": "Earth Sight",
 	"description": "Your Land Shark eyes can perceive through earth as if it was air."
 }

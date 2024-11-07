@@ -1,14 +1,14 @@
 {
-  "replace": false,
-  "values": [
-    "#minecraft:nylium",
-	"#minecraft:crimson_stems",
-	"#minecraft:warped_stems",
-	"#soii:nether_wood_blocks",
-	"#minecraft:wart_blocks",
-	"minecraft:shroomlight",
-	"minecraft:weeping_vines",
-	"minecraft:twisting_vines"
+	"replace": false,
+	"values": [
+		"#minecraft:nylium",
+		"#minecraft:crimson_stems",
+		"#minecraft:warped_stems",
+		"#soii:nether_wood_blocks",
+		"#minecraft:wart_blocks",
+		"minecraft:shroomlight",
+		"minecraft:weeping_vines",
+		"minecraft:twisting_vines"
 	
-  ]
+	]
 }

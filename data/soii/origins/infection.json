@@ -1,5 +1,5 @@
 {
-	"powers": [
+	"powers":[
 		"soii:infect",
 		"soii:home_turf",
 		"soii:gather_forces",
@@ -8,9 +8,9 @@
 		"soii:mushroomivore",
 		"soii:mushroom_spawn"
 	],
-	"icon": "minecraft:mycelium",
-	"order": 4,
-	"impact": 3,
-	"name": "The Infection",
-	"description": "Your only goal is to subjugate the entire world."
+	"icon":"minecraft:mycelium",
+	"order":4,
+	"impact":3,
+	"name":"The Infection",
+	"description":"Your only goal is to subjugate the entire world."
 }

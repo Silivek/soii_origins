@@ -1,17 +1,17 @@
 {
-  "type": "origins:phasing",
-  "render_type": "blindness",
-  "view_distance": 25,
-  "block_condition": {
-    "type": "origins:in_tag",
-    "tag": "soii:phasable"
-  },
-  "phase_down_condition": {
-    "type": "origins:sprinting"
-  },
-  "condition": {
-    "type": "origins:power_active",
-    "power": "soii:phase_toggle"
-  },
-  "hidden": true
+	"type": "origins:phasing",
+	"render_type": "blindness",
+	"view_distance": 25,
+	"block_condition": {
+		"type": "origins:in_tag",
+		"tag": "soii:phasable"
+	},
+	"phase_down_condition": {
+		"type": "origins:sprinting"
+	},
+	"condition": {
+		"type": "origins:power_active",
+		"power": "soii:phase_toggle"
+	},
+	"hidden": true
 }

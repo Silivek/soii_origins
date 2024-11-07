@@ -1,5 +1,5 @@
 {
-  "type": "origins:inventory",
-  "name": "Unyielding Hands",
-  "description": "Any items in your \"hands\" can stay after death. Press [Secondary] to activate."
+	"type": "origins:inventory",
+	"name": "Unyielding Hands",
+	"description": "Any items in your \"hands\" can stay after death. Press [Secondary] to activate."
 }

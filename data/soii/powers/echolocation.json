@@ -5,16 +5,16 @@
 		"entity_action": {
 			"type": "origins:apply_effect",
 			"effect": {
-  			"effect": "minecraft:blindness",
-  			"duration": 120,
-  			"power": 0,
-        "show_particles": false,
-        "show_icon": false
+				"effect": "minecraft:blindness",
+				"duration": 120,
+				"power": 0,
+		"show_particles": false,
+		"show_icon": false
 			}
 		},
 		"interval": 100,
 		"condition": {
-  		"type": "origins:exposed_to_sky"
+			"type": "origins:exposed_to_sky"
 		}
 	},
 	"echo": {
