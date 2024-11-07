@@ -28,8 +28,8 @@
 			"continuous": false
 		},
 		"condition": {
-			"type": "origins:inventory",
-			"slot": "weapon.mainhand",
+			"type": "origins:equipped_item",
+			"equipment_slot": "mainhand",
 			"item_condition": {
 				"type": "origins:ingredient",
 				"ingredient": {

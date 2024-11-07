@@ -5,17 +5,28 @@
 		"entity_action": {
 			"type": "origins:apply_effect",
 			"effect": {
-				"effect": "minecraft:blindness",
-				"duration": 120,
-				"power": 0,
-		"show_particles": false,
-		"show_icon": false
+  				"effect": "minecraft:blindness",
+  				"duration": 240,
+  				"power": 0,
+        			"show_particles": false,
+        			"show_icon": false
 			}
 		},
-		"interval": 100,
 		"condition": {
-			"type": "origins:exposed_to_sky"
-		}
+			"type": "origins:biome",
+			"biome": "minecraft:deep_dark",
+			"inverted": true
+		},
+		"interval": 100
+	},
+	"sniff": {
+    		"type": "origins:night_vision"
+	},
+	"friend": {
+    		"type": "origins:effect_immunity",
+    		"effects": [
+        		"minecraft:darkness"
+    		]
 	},
 	"echo": {
 		"type": "origins:prevent_entity_render",
@@ -25,8 +36,10 @@
 	},
 	"loud": {
 		"type": "origins:entity_glow",
-		"entity_condition": {
-			"type": "origins:sprinting"
+		"bientity_condition": {
+    			"type": "origins:distance",
+    			"comparison": "<=",
+    			"compare_to": 40
 		}
 	},
 	"name": "Echolocation",

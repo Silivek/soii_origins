@@ -1,15 +1,16 @@
 {
-	"powers": [
-		"soii:hardy_body",
-		"soii:cave_affinity",
-		"soii:predator",
+    "powers": [
+        "soii:echolocation",
+		"soii:warden_cry",
+		"soii:ancient_city",
+		"soii:sculkborn",
 		"soii:bulky",
-		"soii:echolocation"
-	],
-	"icon": "minecraft:end_portal_frame",
-	"order": 4,
-	"impact": 3,
-	"name": "Warden",
-	"description": "Born in the depths, these predatory creatures see through sounds.",
-	"unchoosable": false
+		"soii:sonic_boom",
+		"soii:no_food"
+    ],
+    "icon": "minecraft:sculk_catalyst",
+    "order": 4,
+    "impact": 3,
+    "name": "The Warden",
+    "description": "The Warden lurks in the deepest, darkest depths of the world, protecting its home from cacophonous looters."
 }

@@ -8,10 +8,9 @@
 		"soii:unstable",
 		"soii:shake"
 	],
-	"icon": "minecraft:petrified_oak_slab",
-	"order": 4,
-	"impact": 3,
-	"name": "The Glitch",
-	"description": "A very unstable creature that shouldn't exist.",
-	"unchoosable": false
+    "icon": "minecraft:music_disc_11",
+    "order": 4,
+    "impact": 3,
+    "name": "Glitch",
+    "description": "Glitches were never meant to exist, coming into being when §§§§§§§§§§§§§§§§"
 }

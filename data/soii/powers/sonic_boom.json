@@ -1,0 +1,82 @@
+﻿{
+    "condition": {
+        "type": "origins:xp_points",
+        "comparison": ">",
+        "compare_to": 0
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:raycast",
+                "distance": 16,
+                "block": false,
+                "entity": true,
+                "shape_type": "outline",
+                "fluid_handling": "none",
+                "bientity_action": {
+                    "type": "origins:choice",
+                    "actions": [
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:damage",
+                                "amount": 6,
+                                "source": {
+                                    "name": "sonic_boom.player",
+                                    "unblockable": true
+                                }
+                            }
+                        },
+                        {
+                            "weight": 5,
+                            "element": {
+                                "type": "origins:damage",
+                                "amount": 5,
+                                "source": {
+                                    "name": "sonic_boom.player",
+                                    "unblockable": true
+                                }
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:damage",
+                                "amount": 5,
+                                "source": {
+                                    "name": "sonic_boom.player",
+                                    "bypasses_armor": true,
+                                    "unblockable": true
+                                }
+                            }
+                        }
+                    ]
+                },
+                "command_along_ray": "particle minecraft:sonic_boom",
+                "command_step": 1
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "experience add @s -1"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "entity.warden.sonic_boom",
+                "volume": 1
+            }
+        ]
+    },
+    "cooldown": 200,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 12
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "name": "Sonic Boom",
+    "description": "At the cost of experience, you can fire a sonic laser."
+}

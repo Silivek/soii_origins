@@ -1,0 +1,29 @@
+{
+	"type": "origins:multiple",
+	"food": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:feed",
+			"food": 2,
+			"saturation": 1
+		},
+		"condition": {
+			"type": "origins:biome",
+			"biome": "minecraft:deep_dark"
+		}
+	},
+	"pursuit": {
+		"type": "origins:self_action_when_hit",
+		"entity_action": {
+			"type": "origins:apply_effect",
+			"effect": {
+				"effect": "minecraft:speed",
+				"duration": 200,
+				"power": 1
+			}
+		},
+		"cooldown": 1200
+	},
+	"name": "Sculkborn",
+	"description": "You can only replenish hunger in the Deep Dark and are good at chasing attackers."
+}

@@ -1,0 +1,17 @@
+{
+  	"type": "origins:multiple",
+	"spawn" : {
+		"type": "origins:modify_player_spawn",
+  		"dimension": "minecraft:overworld",
+  		"structure": "minecraft:ancient_city"
+	},
+	"sculk" : {
+		"type": "origins:prevent_game_event",
+    		"events": [
+			"minecraft:step",
+			"minecraft:hit_ground"
+		]
+	},
+  	"name": "Ancient Guardian",
+  	"description": "Your natural spawn is an ancient city, and the sculk does not react to your presence."
+}
