@@ -1,0 +1,313 @@
+{
+	"type": "origins:multiple",
+	"inventory": {
+		"type": "origins:inventory",
+		"container_type": "hopper",
+		"title": "Internal Furnace",
+		"drop_on_death": true,
+		"drop_on_death_filter": {
+			"type": "origins:ingredient",
+			"inverted": true,
+			"ingredient": {
+				"tag": "soii:automaton_fuel"
+			}
+		},
+		"key": {
+			"key": "key.origins.secondary_active"
+		}
+	},
+	"burn_time": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 1000,
+		"hud_render": {
+			"should_render": true
+		}
+	},
+	"reduce_burn_time": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_burn_time",
+			"change": -1
+		}
+	},
+	"consume_stick": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:modify_inventory",
+			"inventory_type": "power",
+			"power": "*:*_inventory",
+			"entity_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_burn_time",
+				"change": 5
+			},
+			"item_action": {
+				"type": "origins:consume",
+				"amount": 1
+			},
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:stick"
+				}
+			}
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_burn_time",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"consume_logs": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:modify_inventory",
+			"inventory_type": "power",
+			"power": "*:*_inventory",
+			"entity_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_burn_time",
+				"change": 15
+			},
+			"item_action": {
+				"type": "origins:consume",
+				"amount": 1
+			},
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"tag": "minecraft:logs_that_burn"
+				}
+			}
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_burn_time",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"consume_coal": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:modify_inventory",
+			"inventory_type": "power",
+			"power": "*:*_inventory",
+			"entity_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_burn_time",
+				"change": 80
+			},
+			"item_action": {
+				"type": "origins:consume",
+				"amount": 1
+			},
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:coal"
+				}
+			}
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_burn_time",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"consume_charcoal": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:modify_inventory",
+			"inventory_type": "power",
+			"power": "*:*_inventory",
+			"entity_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_burn_time",
+				"change": 80
+			},
+			"item_action": {
+				"type": "origins:consume",
+				"amount": 1
+			},
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:charcoal"
+				}
+			}
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_burn_time",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"consume_blaze_rod": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:modify_inventory",
+			"inventory_type": "power",
+			"power": "*:*_inventory",
+			"entity_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_burn_time",
+				"change": 120
+			},
+			"item_action": {
+				"type": "origins:consume",
+				"amount": 1
+			},
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:blaze_rod"
+				}
+			}
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_burn_time",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"consume_dried_kelp_block": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:modify_inventory",
+			"inventory_type": "power",
+			"power": "*:*_inventory",
+			"entity_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_burn_time",
+				"change": 200
+			},
+			"item_action": {
+				"type": "origins:consume",
+				"amount": 1
+			},
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:dried_kelp_block"
+				}
+			}
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_burn_time",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"consume_coal_block": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:modify_inventory",
+			"inventory_type": "power",
+			"power": "*:*_inventory",
+			"entity_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_burn_time",
+				"change": 800
+			},
+			"item_action": {
+				"type": "origins:consume",
+				"amount": 1
+			},
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:coal_block"
+				}
+			}
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_burn_time",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"consume_lava_bucket": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:replace_inventory",
+			"inventory_type": "power",
+			"power": "*:*_inventory",
+			"entity_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_burn_time",
+				"change": 1000
+			},
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:lava_bucket"
+				}
+			},
+			"stack": {
+				"item": "minecraft:bucket"
+			}
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_burn_time",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"consume_other": {
+		"type": "origins:action_over_time",
+		"interval": 100,
+		"entity_action": {
+			"type": "origins:modify_inventory",
+			"inventory_type": "power",
+			"power": "*:*_inventory",
+			"item_action": {
+				"type": "origins:consume",
+				"amount": 1
+			},
+			"item_condition": {
+				"type": "origins:and",
+				"conditions": [
+					{
+						"type": "origins:ingredient",
+						"inverted": true,
+						"ingredient": {
+							"tag": "soii:automaton_fuel"
+						}
+					},
+					{
+						"type": "origins:ingredient",
+						"inverted": true,
+						"ingredient": {
+							"item": "minecraft:bucket"
+						}
+					},
+					{
+						"type": "origins:fireproof",
+						"inverted": true
+					}
+				]
+			}
+		}
+	},
+	"name": "Internal Furnace",
+	"description": "Burns items contained inside it, giving food in exchange for fuel. You can open your fuel reserves using [Secondary]."
+}

@@ -8,7 +8,8 @@
 		"soii:infection",
 		"soii:raccoon",
 		"soii:possum",
-		"soii:flamespawn"
+		"soii:flamespawn",
+		"soii:automaton"
 	],
 	"allow_random": false
 }

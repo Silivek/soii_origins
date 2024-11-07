@@ -1,0 +1,11 @@
+{
+	"powers":[
+		"soii:no_food",
+		"soii:internal_furnace"
+	],
+	"icon":"minecraft:blast_furnace",
+	"order":4,
+	"impact":3,
+	"name":"Automaton",
+	"description":"A crafted species that is powered by an internal furnace."
+}

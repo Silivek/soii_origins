@@ -1,0 +1,13 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:stick",
+		"#minecraft:logs_that_burn",
+		"minecraft:coal",
+		"minecraft:charcoal",
+		"minecraft:blaze_rod",
+		"minecraft:dried_kelp_block",
+		"minecraft:coal_block",
+		"minecraft:lava_bucket"
+	]
+}

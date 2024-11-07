@@ -8,7 +8,7 @@
 		"soii:sonic_boom",
 		"soii:no_food"
 	],
-	"icon": "minecraft:sculk_catalyst",
+	"icon": "minecraft:sculk_shrieker",
 	"order": 4,
 	"impact": 3,
 	"name": "The Warden",
