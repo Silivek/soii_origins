@@ -1,0 +1,11 @@
+{
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:nausea",
+        "minecraft:hunger",
+		"minecraft:poison",
+		"minecraft:saturation"
+    ],
+	"name": "Mechanical Body",
+	"description": "Your body is mechanical, making it immune to hunger effects, poison, and nausea."
+}

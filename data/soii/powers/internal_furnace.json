@@ -308,6 +308,21 @@
 			}
 		}
 	},
+	"fill_food": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:feed",
+			"food": 2,
+			"saturation": 0.5
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_burn_time",
+			"comparison": ">=",
+			"compare_to": 1
+		}
+	},
 	"name": "Internal Furnace",
-	"description": "Burns items contained inside it, giving food in exchange for fuel. You can open your fuel reserves using [Secondary]."
+	"description": "Burns items contained inside it, giving hunger in exchange for fuel. You can open your fuel reserves using [Secondary]."
 }

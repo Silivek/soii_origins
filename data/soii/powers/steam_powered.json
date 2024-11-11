@@ -1,0 +1,33 @@
+{
+	"type": "origins:multiple",
+	"on_break": {
+		"type": "origins:action_on_block_break",
+		"entity_action": {
+			"type": "origins:exhaust",
+			"amount": 8
+		}
+	},
+	"on_block_use": {
+		"type": "origins:action_on_block_use",
+		"entity_action": {
+			"type": "origins:exhaust",
+			"amount": 8
+		}
+	},
+	"on_entity_use": {
+		"type": "origins:action_on_entity_use",
+		"entity_action": {
+			"type": "origins:exhaust",
+			"amount": 8
+		}
+	},
+	"on_item_use": {
+		"type": "origins:action_on_item_use",
+		"entity_action": {
+			"type": "origins:exhaust",
+			"amount": 8
+		}
+	},
+	"name": "Steam Powered",
+	"description": "All of your actions consume your hunger bar."
+}
