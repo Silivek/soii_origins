@@ -23,6 +23,11 @@
 						"minecraft:crimson_forest",
 						"minecraft:warped_forest"
 					]
+				},
+				{
+					"type": "origins:in_tag",
+					"inverted": true,
+					"tag": "soii:no_glow"
 				}
 			]
 		}
@@ -30,24 +35,34 @@
 	"intruder": {
 		"type": "origins:entity_glow",
 		"entity_condition": {
-			"type": "origins:or",
+			"type": "origins:and",
 			"conditions": [
 				{
-					"type": "origins:block_in_radius",
-					"radius": 3,
-					"shape": "sphere",
-					"block_condition": {
-						"type": "origins:in_tag",
-						"tag": "soii:infected"
-					}
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:block_in_radius",
+							"radius": 3,
+							"shape": "sphere",
+							"block_condition": {
+								"type": "origins:in_tag",
+								"tag": "soii:infected"
+							}
+						},
+						{
+							"type": "origins:biome",
+							"biomes": [
+								"minecraft:mushroom_fields",
+								"minecraft:crimson_forest",
+								"minecraft:warped_forest"
+							]
+						}
+					]
 				},
 				{
-					"type": "origins:biome",
-					"biomes": [
-						"minecraft:mushroom_fields",
-						"minecraft:crimson_forest",
-						"minecraft:warped_forest"
-					]
+					"type": "origins:in_tag",
+					"inverted": true,
+					"tag": "soii:no_glow"
 				}
 			]
 		}

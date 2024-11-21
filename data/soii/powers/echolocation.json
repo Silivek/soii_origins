@@ -40,6 +40,11 @@
 				"type": "origins:distance",
 				"comparison": "<=",
 				"compare_to": 40
+		},
+		"entity_condition": {
+			"type": "origins:in_tag",
+			"inverted": true,
+			"tag": "soii:no_glow"
 		}
 	},
 	"name": "Echolocation",
